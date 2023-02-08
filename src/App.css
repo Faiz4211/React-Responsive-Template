@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+/* Header component  */
+#header {
+  color: #fff;
+  background-color: #e74c3c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-size: 2rem;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  display: block;
   color: white;
+  padding: 15px 10px;
+  display: block;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+#menu li a:hover {
+  color: #c0392b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Banner Component  */
+
+#banner {
+  background: url('./assets/images/banner.jpg') no-repeat 0 0;
+  background-size: cover;
+}
+
+.banner-title {
+  padding-top: 5rem;
+}
+
+.banner-title h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+.banner-title p.lead {
+  color: #fff;
+  background-color: rgb(231, 76, 60, 0.7);
+  padding: 10px;
 }

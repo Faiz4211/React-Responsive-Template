@@ -26,10 +26,10 @@ export default function Home() {
                         <div className="col-md-8">
                             <ul id="menu" className='float-md-end'>
                                 <li><Link to="/">Home</Link></li>
-                                <li><Link to="/">About Us</Link></li>
-                                <li><Link to="/">Services</Link></li>
-                                <li><Link to="/">Products</Link></li>
-                                <li><Link to="/">Contact Us</Link></li>
+                                <li><Link to='/About'>About Us</Link></li>
+                                <li><Link to="/Services">Services</Link></li>
+                                <li><Link to="/Products">Products</Link></li>
+                                <li><Link to="/Contact">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>

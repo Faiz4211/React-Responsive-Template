@@ -1,3 +1,16 @@
+/* Commom Css  */
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-head {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 /* Header component  */
 #header {
   color: #fff;
@@ -53,4 +66,134 @@
   color: #fff;
   background-color: rgb(231, 76, 60, 0.7);
   padding: 10px;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.icon {
+  font-size: 70px;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+/* Section Css  */
+
+.section-head::after {
+  background-color: #e74c3c;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+/* Testimonial Css */
+
+#testimonial {
+  color: #fff;
+  background: url('./assets/images/testimonial-bg.jpg') no-repeat 0 0;
+  background-size: cover;
+  padding: 50px 0;
+  position: relative;
+}
+
+.testimonial img {
+  border-radius: 50%;
+}
+
+/* News Css  */
+
+#news a {
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+.news-post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.news-post h3 {
+  font-size: 1.35rem;
+}
+
+.news-post h3 :hover {
+  background-color: aliceblue;
+}
+
+.post-date {
+  font-size: 13px;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.read-more :hover {
+  color: #000;
+}
+
+.latest-news a :hover {
+  color: #000;
+}
+
+
+.latest-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer Css  */
+.footer-siderbar {
+  color: #fff;
+  background-color: #34495e;
+  padding: 20px 0;
+
+}
+
+.footer-widget h4:after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+.footer-widget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer {
+  color: #fff;
+  background-color: #2c3e50;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer a :hover {
+  color: #000;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#social-icons li {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+#socil-icons li {
+  color: #fff;
 }

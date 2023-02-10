@@ -4,6 +4,8 @@ import { BiAnchor } from 'react-icons/bi';
 import { IoDiamondOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import '../App.css'
+import CustomBanner from './GlobalComponents/CustomBanner';
+import CustomHeader from './GlobalComponents/CustomHeader'
 
 export default function Home() {
     const images = {
@@ -17,38 +19,10 @@ export default function Home() {
     return (
         <>
             {/* Header  */}
-            <div id="header">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <h1 className='logo'>Company Name</h1>
-                        </div>
-                        <div className="col-md-8">
-                            <ul id="menu" className='float-md-end'>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to='/About'>About Us</Link></li>
-                                <li><Link to="/Services">Services</Link></li>
-                                <li><Link to="/Products">Products</Link></li>
-                                <li><Link to="/Contact">Contact Us</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CustomHeader />
 
             {/* Banner  */}
-            <div id="banner" className='py-5'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-8 col-lg-6">
-                            <div className="banner-title">
-                                <h1 className='title'>Some Heading Goes here</h1>
-                                <p className='lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsum aspernatur dolorum debitis, doloribus molestias perspiciatis fugiat atque. Cupiditate, culpa!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CustomBanner />
 
             {/* Section  */}
 
